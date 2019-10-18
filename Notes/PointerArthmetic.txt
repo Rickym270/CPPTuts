@@ -1,0 +1,21 @@
+1. Why is setting the pointer locations different in line 13 and line 31?  
+      If this is done:
+          int *ptr; ptr = &arr;
+      This raises an error because you're saving an int array to an int pointer.
+      On the contrary, doing the following:
+          int *ptr; ptr = arr;
+      arr is saved to pointer ptr. The var arr is a pointer to the first element in the array.
+2. Note on PointerComparison()
+      The while loop condition might be confusing. Here's the output:
+          Pointer comparison:
+              Address of arr[0]: 0x60126c
+              Value of arr[0]: 0
+              Address of arr[1]: 0x601270
+              Value of arr[1]: 50
+              Address of arr[2]: 0x601274
+              Value of arr[2]: 105
+              Address of arr[3]: 0x601278
+              Value of arr[3]: 100
+              Address of arr[4]: 0x60127c
+              Value of arr[4]: 150
+      This works since the array is allocated in order. So they're printed in that order.
