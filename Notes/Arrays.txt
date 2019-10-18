@@ -1,0 +1,7 @@
+1. Multi-Dimnesional array
+    Here is the general form of a multidimensional array declaration:
+        type name[size1][size2]...[sizeN];
+
+2. Pointers to Array
+    The following program fragment assigns p the address of the first element of balance.
+   - Pointers can only be used as a parameter and a return value within functions.
